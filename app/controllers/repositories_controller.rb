@@ -12,7 +12,7 @@ class RepositoriesController < ApplicationController
     if @resp.success?
       @repos = body["items"]
     else
-      @error = "Sorry! Try again."
+      @error = "That didn't work! Try again."
     end
       render 'search'
   end
